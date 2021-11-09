@@ -359,7 +359,7 @@
 </template>
 
 <script>
-import debounce from 'lodash/debounce';
+import { debounce } from '@/utils/debounce';
 import { findSubString } from '@/utils/findSubString';
 import { formatDate } from '@/utils/formatDate';
 import { extend } from 'vee-validate';
@@ -466,11 +466,13 @@ export default {
                 computesRequired: true,
             });
         },
+
         filterCitizenships: debounce(function (nationality) {
             this.filtredCitizenships = nationality
                 ? this.citizenships.filter((country) => findSubString(country.nationality, nationality))
                 : [...this.citizenships];
         }, 200),
+
         submitForm() {
             const birthday = formatDate(this.formData.birthday);
             const passport = this.isRuCitizenship
