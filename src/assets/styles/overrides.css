@@ -1,0 +1,7 @@
+.columns.is-grow {
+    flex-grow: 1;
+}
+
+.b-radio.radio:not(.button) {
+    margin-right: 1em !important;
+}

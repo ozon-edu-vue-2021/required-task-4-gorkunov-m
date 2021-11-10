@@ -1,36 +1,32 @@
 <template>
-  <div id="app">
-    <Form />
-  </div>
+    <div id="app" class="app">
+        <div class="app__form">
+            <Form />
+        </div>
+    </div>
 </template>
 
 <script>
-import Form from "./components/Form.vue";
+import Form from './components/Form.vue';
 
 export default {
-  name: "App",
-  components: {
-    Form,
-  },
+    name: 'App',
+    components: {
+        Form,
+    },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
-  background-color: #fafafa;
-  padding: 24px;
-  box-sizing: border-box;
+.app {
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: #fafafa;
 }
 
-html,
-body,
-#app {
-  height: 100%;
-}
-
-* {
-  box-sizing: border-box;
+.app__form {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
 }
 </style>

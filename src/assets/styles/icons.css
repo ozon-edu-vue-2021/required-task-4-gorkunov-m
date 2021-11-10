@@ -1,0 +1,40 @@
+.xicons {
+    display: block;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+}
+
+.xicons.arrow-left,
+.xicons.arrow-top,
+.xicons.arrow-right,
+.xicons.arrow-bottom {
+    border: 3px solid transparent;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 2px;
+    border-color: #7957d5;
+    transform-origin: center;
+}
+
+.xicons.arrow-left {
+    margin-left: 2px;
+    transform: rotate(45deg);
+}
+
+.xicons.arrow-top {
+    margin-left: 0;
+    margin-top: 2px;
+    transform: rotate(135deg);
+}
+
+.xicons.arrow-right {
+    margin-left: -2px;
+    transform: rotate(225deg);
+}
+
+.xicons.arrow-bottom {
+    margin-left: 0;
+    margin-top: -2px;
+    transform: rotate(315deg);
+}
